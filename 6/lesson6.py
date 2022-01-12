@@ -8,7 +8,7 @@ def file_collector(path):
             result["dirs"].append(dir)
         for file in filenames:
             result["files"].append(file)
-    with open("skiper.txt","w") as file:
+    with open("skiper.txt","w") as file: #файл сохраняется в директории, где лежит файл с этой программой, т.е. откуда он запускается
         file.write("\n{:-<50}\n".format("Directories"))
         for dir in result["dirs"]:
             file.write(f"\t{dir}\n")
@@ -16,5 +16,5 @@ def file_collector(path):
         for files in result["files"]:
             file.write(f"\t{files}\n")
 
-path = "D:\Загрузки"
+path = "D:\Загрузки" #сюда путь вставляется
 file_collector(path)
