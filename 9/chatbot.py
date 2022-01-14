@@ -13,7 +13,7 @@ def echo(update=Update, context=CallbackContext):
 
 # запуск бота
 def main():
-    updater = Updater("606262492:AAEuiIHxmj1rxBsIHCU6N3JBEVbLHyITZ7I")  # токен бота
+    updater = Updater("APIkey")  # токен бота
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
