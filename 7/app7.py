@@ -16,6 +16,7 @@ def collector(path, res_path):
                 os.replace(f"{dirpath}\\{file}", f"{res_path}\\{file_date}\\{file}")
 
 
+# аккуратно с путями! ПРИЛОЖЕНИЕ ПЕРЕМЕЩАЕТ ФАЙЛЫ
 path = "C:\\Users\\User\\test"
 res_path = "C:\\Users\\User\\test"
 
