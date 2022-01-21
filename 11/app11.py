@@ -28,10 +28,11 @@ def log_in():
     # получение введенной информации
     login = login_entry.get()
     password = password_entry.get()
+    # проверка на соотетсвие паттернам
     if not login_pattern.search(login):
         login_entry.config(bg="red")
         password_entry.config(bg="red")
-    else:  # проверка на соотетсвие паттернам
+    else:
         if password_pattern.search(password):  # если все введено ОК
             login_entry.config(bg="green")  # будет подсвечиваться зеленым цетом
             password_entry.config(bg="green")
